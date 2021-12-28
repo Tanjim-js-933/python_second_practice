@@ -1,9 +1,16 @@
-ask = input()
-ask = int(ask)
-i = 1
+numberOfInput = input()
+numberOfInput = int(numberOfInput)
+counter = 1
 
-while i <= ask:
-    i = i + 1
-    ques = input()
-    ques = int(ques)
-    if ques 
+while counter <= numberOfInput:
+    number = input()
+    number = int(number)
+    i = 1
+
+    print("Case", counter, end=": ")
+    while i <= number:
+        if number % i == 0:
+            print(i, end=" ")
+        i = i + 1
+    print("\n")
+    counter = counter + 1
